@@ -12,14 +12,12 @@ import (
 	"os"
 )
 
+//Use ctrl+d to stop this program
 func main() {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
 	for input.Scan() {
 		data := input.Text()
-		if data == "quit" {
-			break
-		}
 		counts[data]++
 	}
 	for val, num := range counts {

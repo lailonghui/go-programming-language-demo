@@ -6,8 +6,39 @@
 */
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Printf("fdsfads")
+	counts := make(map[string]int)
+	files := os.Args[1:]
+	if len(files) == 0 {
+		countLines(os.Stdin, counts)
+	} else {
+		for _, name := range files {
+			file, err := os.Open(name)
+			if err != nil {
+				fmt.Printf("os.Open() err:%v", err)
+				return
+			}
+			countLines(file, counts)
+		}
+	}
+	for val, line := range counts {
+		fmt.Printf("%s:\t%d\n", val, line)
+	}
+}
+
+func countLines(f *os.File, counts map[string]int) {
+	input := bufio.NewScanner(f)
+	for input.Scan() {
+		data := input.Text()
+		if data == "exit" {
+			return
+		}
+		counts[data]++
+	}
 }
