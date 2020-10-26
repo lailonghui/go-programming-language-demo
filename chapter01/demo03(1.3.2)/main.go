@@ -22,13 +22,15 @@ func main() {
 			file, err := os.Open(name)
 			if err != nil {
 				fmt.Printf("os.Open() err:%v", err)
-				return
+				continue
 			}
 			countLines(file, counts)
 		}
 	}
-	for val, line := range counts {
-		fmt.Printf("%s:\t%d\n", val, line)
+	for val, n := range counts {
+		if n > 1 {
+			fmt.Printf("%s:\t%d\n", val, n)
+		}
 	}
 }
 
