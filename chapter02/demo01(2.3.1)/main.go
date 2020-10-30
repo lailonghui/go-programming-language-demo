@@ -1,5 +1,5 @@
 /*
-@Time : 2020/10/29 14:22 
+@Time : 2020/10/29 14:22
 @Author : lai
 @Description :
 @File : main
@@ -8,7 +8,7 @@ package main
 
 import "fmt"
 
-func main()  {
+func main() {
 	x := 1
 	p := &x
 	fmt.Println(p)
