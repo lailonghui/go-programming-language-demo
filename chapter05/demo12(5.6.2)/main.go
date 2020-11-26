@@ -11,6 +11,7 @@ import (
 	"golang.org/x/net/html"
 	"log"
 	"net/http"
+	"os"
 	"sort"
 )
 
@@ -35,13 +36,14 @@ var prereqs = map[string][]string{
 }
 
 func main() {
-	for i, course := range topoSort(prereqs) {
-		fmt.Printf("%d:\t%s\n", i+1, course)
-	}
-	//breadthFirst(crawl, os.Args[1:])
+	//for i, course := range topoSort(prereqs) {
+	//	fmt.Printf("%d:\t%s\n", i+1, course)
+	//}
+	breadthFirst(crawl, os.Args[1:])
 
 }
 
+//crawl extract the new link of URL
 func crawl(url string) []string {
 	fmt.Println(url)
 	list, err := Extract(url)
