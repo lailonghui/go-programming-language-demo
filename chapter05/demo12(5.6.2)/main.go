@@ -40,7 +40,6 @@ func main() {
 	//	fmt.Printf("%d:\t%s\n", i+1, course)
 	//}
 	breadthFirst(crawl, os.Args[1:])
-
 }
 
 //crawl extract the new link of URL
