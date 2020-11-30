@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e9ab9a7-d091-489e-9284-43832e01b0e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter05/demo14(5.6.4)/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05/demo15(5.6.5)/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05/demo16(5.7.1)/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05/demo17(5.8.1)/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05/demo18(5.9.1)/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter06/demo01(6.1.1)/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter06/demo02(6.3.1)/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05/demo12(5.6.2)/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05/demo12(5.6.2)/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter05/demo14(5.6.3)/main.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +13,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter06/demo01(6.1.1)/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="21" selection-start-line="21" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="e#87#112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chapter06/demo02(6.3.1)/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <folding>
+                <element signature="e#87#119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/math/hypot.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,6 +124,8 @@
         <option value="$PROJECT_DIR$/chapter05/demo16(5.7.1)/main.go" />
         <option value="$PROJECT_DIR$/chapter05/demo17(5.8.1)/main.go" />
         <option value="$PROJECT_DIR$/chapter05/demo18(5.9.1)/main.go" />
+        <option value="$PROJECT_DIR$/chapter06/demo01(6.1.1)/main.go" />
+        <option value="$PROJECT_DIR$/chapter06/demo02(6.3.1)/main.go" />
       </list>
     </option>
   </component>
@@ -121,35 +152,28 @@
             <path>
               <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter06" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05" type="462c0819:PsiDirectoryNode" />
-              <item name="demo12(5.6.2)" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter06" type="462c0819:PsiDirectoryNode" />
+              <item name="demo01(6.1.1)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05" type="462c0819:PsiDirectoryNode" />
-              <item name="demo15(5.6.5)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05" type="462c0819:PsiDirectoryNode" />
-              <item name="demo17(5.8.1)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05" type="462c0819:PsiDirectoryNode" />
-              <item name="demo18(5.9.1)" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter06" type="462c0819:PsiDirectoryNode" />
+              <item name="demo02(6.3.1)" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.13.10" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -188,16 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (3)">
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go_programming_language_demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/chapter05/demo12(5.6.2)/main.go" />
-      <package value="lai.com/go_programming_language_demo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build main.go (5)">
     <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_programming_language_demo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -216,11 +231,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_programming_language_demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/chapter06/demo01(6.1.1)/main.go" />
+      <package value="lai.com/go_programming_language_demo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_programming_language_demo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/chapter05/demo11(5.6.1)/main.go" />
+      <filePath value="$PROJECT_DIR$/chapter06/demo02(6.3.1)/main.go" />
       <package value="lai.com/go_programming_language_demo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -235,19 +259,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go (5)" />
-      <item itemvalue="Go Build.go build main.go (1)" />
       <item itemvalue="Go Build.go build main.go (2)" />
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build main.go (3)" />
+      <item itemvalue="Go Build.go build main.go (4)" />
+      <item itemvalue="Go Build.go build main.go (5)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (5)" />
+        <item itemvalue="Go Build.go build main.go (4)" />
         <item itemvalue="Go Build.go build main.go (3)" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build main.go (2)" />
-        <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build main.go (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +286,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -326,28 +351,14 @@
     <MESSAGE value="read chapter 5.6" />
     <MESSAGE value="chanter 5.6.3 is waited to completed" />
     <MESSAGE value="chanter 5.6.3 is waited to completed2" />
-    <option name="LAST_COMMIT_MESSAGE" value="chanter 5.6.3 is waited to completed2" />
+    <MESSAGE value="chapter 5 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="chapter 5 finished" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter04/demo03(4.2.3)/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter04/demo04(4.2.4)/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/unicode/letter.go" />
     <entry file="file://C:/Go/src/io/io.go" />
     <entry file="file://$PROJECT_DIR$/chapter04/demo07(4.3.3)/main.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -695,6 +706,33 @@
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
             <element signature="e#87#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/math/hypot.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter06/demo01(6.1.1)/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" selection-start-line="21" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#87#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter06/demo02(6.3.1)/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="e#87#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
