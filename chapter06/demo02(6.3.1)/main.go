@@ -23,13 +23,17 @@ type ColoredPoint struct {
 	Color color.RGBA
 }
 
+func (c ColoredPoint) Distance(p Point) {
+
+}
+
 func main() {
 	var cp ColoredPoint
 	cp.X = 1
 	fmt.Println(cp.Point.X) // "1"
 	cp.Point.Y = 2
 	fmt.Println(cp.Y) // "2"
-
+	cp.Distance(Point{3, 4})
 	//red := color.RGBA{255, 0, 0, 255}
 	//blue := color.RGBA{0, 0, 255, 255}
 	//var p = ColoredPoint{Point{1, 1}, red}
