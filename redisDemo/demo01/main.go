@@ -8,11 +8,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/garyburd/redigo/redis"
 )
 
 func main() {
-
 	c, err := redis.Dial("tcp", "192.168.3.130:6379", redis.DialPassword("123456"))
 	if err != nil {
 		fmt.Println("conn redis failed:", err)

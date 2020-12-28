@@ -24,9 +24,9 @@ const (
 func articleVote(conn redis.Conn, user, article string) {
 	//计算文章投票截止时间
 	cutoff := time.Now().Unix() - ONE_WEEK_IN_SCEONDS
-	r, err := redis.Int64(conn.Do("zscore", "time", article))
+	r, err := redis.Int64(conn.Do("ZSCORE", "time:", article))
 	if err != nil {
-		fmt.Println("zscore time failed,", err)
+		fmt.Println("ZSCORE time failed,", err)
 		return
 	}
 	//检查是否还可以进行投票，超过7天用户不能再对文章投票
@@ -36,11 +36,32 @@ func articleVote(conn redis.Conn, user, article string) {
 	//从article:id标识符里面取出文章的id
 	article_id := strings.Split(article, ":")[1]
 
+	//如果SADD的命令执行成功，说明用户第一次对文章进行投票，则执行加分操作
+	_, err = conn.Do("SADD", "voted"+article_id, user)
+	if err != nil {
+		fmt.Printf("SADD voted%s err:%v \n", article_id, err)
+		return
+	}
+
+	//对文章的评分进行更新
+	_, err = conn.Do("ZINCRBY", "score:", VOTE_SCORE, article)
+	if err != nil {
+		fmt.Printf("ZINCRBY score: err:%v \n", err)
+		return
+	}
+
+	//对文章的投票数量进行更新
+	_, err = conn.Do("HINCRBY", "votes", article, 1)
+	if err != nil {
+		fmt.Printf("ZINCRBY score: err:%v \n", err)
+		return
+	}
+
 }
 
 //连接redis
 func getConnect() (redis.Conn, error) {
-	conn, err := redis.Dial("tcp", "192.168.3.130:6379", redis.DialPassword("123456"))
+	conn, err := redis.Dial("tcp", "127.0.0.1:6379", redis.DialPassword("123456"))
 	if err != nil {
 		fmt.Println("conn redis failed:", err)
 		return nil, err
@@ -53,4 +74,5 @@ func getConnect() (redis.Conn, error) {
 	return conn, err
 }
 func main() {
+
 }
