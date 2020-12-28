@@ -8,10 +8,22 @@ package main
 
 import (
 	"bytes"
+	"encoding/json"
 	"fmt"
 )
 
+type Test struct {
+	Name string
+	Age  interface{}
+}
+
 func main() {
+	a := &Test{
+		Name: "lai",
+		Age:  23.3,
+	}
+	marshal, _ := json.Marshal(a)
+	fmt.Println(string(marshal))
 	//var x, y IntSet
 	//x.Add(1)
 	//x.Add(144)
@@ -29,14 +41,15 @@ func main() {
 	//a |= 2
 	//fmt.Println(a)
 
-	var i IntSet
-	i.Add(4)
-	i.Add(5)
-	i.Add(6)
-	i.Add(7)
-	fmt.Println(i.words)
-	//fmt.Println(i.String())
-	fmt.Println(i.Has(2))
+	//var i IntSet
+	//i.Add(4)
+	//i.Add(5)
+	//i.Add(6)
+	//i.Add(7)
+	//fmt.Println(i.words)
+	////fmt.Println(i.String())
+	//fmt.Println(i.Has(2))
+
 }
 
 // An IntSet is a set of small non-negative integers.
