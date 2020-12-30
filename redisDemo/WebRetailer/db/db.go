@@ -12,7 +12,7 @@ import (
 )
 
 //连接redis
-func getConnect() *redis.Client {
+func GetConnect() *redis.Client {
 	rdb := redis.NewClient(&redis.Options{
 		Addr:     "192.168.3.130:6379",
 		Password: "123456",
