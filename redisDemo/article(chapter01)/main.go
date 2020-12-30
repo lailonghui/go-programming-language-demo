@@ -82,9 +82,9 @@ func articleVote(rdb *redis.Client, user, article string) {
 //发布文章
 func postArticle(rdb *redis.Client, user, title, link string) int64 {
 	//使用INCR累加生成article_id
-	articleId, err := rdb.Incr(ctx, "article:").Result()
+	articleId, err := rdb.Incr(ctx, "article(chapter01):").Result()
 	if err != nil {
-		fmt.Printf("INCR article: err:%s\n", err)
+		fmt.Printf("INCR article(chapter01): err:%s\n", err)
 		return 0
 	}
 
@@ -104,7 +104,7 @@ func postArticle(rdb *redis.Client, user, title, link string) int64 {
 
 	//将文章信息存储到一个散列里面
 	now := time.Now().Unix()
-	article := fmt.Sprintf("article:%d", articleId)
+	article := fmt.Sprintf("article(chapter01):%d", articleId)
 	err = rdb.HMSet(ctx, article, "title", title, "link", link, "poster", user, "time", now, "votes", 1).Err()
 	if err != nil {
 		fmt.Printf("HMSET %s failed,err:%v\n", article, err)
@@ -152,7 +152,7 @@ func getArticle(rdb *redis.Client, page int64, order string) []map[string]string
 
 //添加和移除群组里的文章
 func addRemoveGroup(rdb *redis.Client, articleId int64, toAdd, toRemove []string) {
-	article := fmt.Sprintf("article:%d", articleId)
+	article := fmt.Sprintf("article(chapter01):%d", articleId)
 	for _, group := range toAdd {
 		rdb.SAdd(ctx, "group:"+group, article)
 	}
@@ -195,7 +195,7 @@ func main() {
 	//	fmt.Println(v)
 	//}
 
-	//articleVote(rdb, "2", "article:10")
+	//articleVote(rdb, "2", "article(chapter01):10")
 
 	//addRemoveGroup(rdb, 11, []string{"test"}, nil)
 
