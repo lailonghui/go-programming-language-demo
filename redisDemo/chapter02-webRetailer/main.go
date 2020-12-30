@@ -12,6 +12,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/go-redis/redis/v8"
+	"lai.com/go_programming_language_demo/redisDemo/chapter02-webRetailer/db"
 	"math"
 	"net/http"
 	"reflect"
@@ -182,7 +183,7 @@ func main() {
 	//var date1 []byte = []byte("adfkfjsadsijfal")
 	//var hs = sha256.Sum256(date1)
 	//fmt.Printf("%X\n", hs)
-	//rdb := db.GetConnect()
+	rdb := db.GetConnect()
 	//rdb.ZInterStore(ctx, "viewed:", &redis.ZStore{
 	//	Keys:    []string{"viewed:"},
 	//	Weights: []float64{0.5},

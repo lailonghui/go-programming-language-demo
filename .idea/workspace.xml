@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e9ab9a7-d091-489e-9284-43832e01b0e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/redisDemo/WebRetailer/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/WebRetailer/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisDemo/WebRetailer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/WebRetailer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/db/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisDemo/WebRetailer(chapter02)/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/chapter02-webRetailer/db/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisDemo/WebRetailer(chapter02)/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/chapter02-webRetailer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisDemo/WebRetailer(chapter02)/数据库设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/chapter02-webRetailer/数据库设计.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisDemo/article(chapter01)/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/chapter01-article/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisDemo/article(chapter01)/数据库设计.md" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/chapter01-article/数据库设计.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,18 +20,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/redisDemo/WebRetailer/main.go">
+        <entry file="file://$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="175" column="36" selection-start-line="175" selection-start-column="36" selection-end-line="175" selection-end-column="36" />
+            <state relative-caret-position="360">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
               <folding>
-                <element signature="e#87#166#0" expanded="true" />
-                <element signature="n#!!block;n#ToSlice#0" />
-                <element signature="n#!!block;n#updateToken#0" />
-                <element signature="n#!!block;n#clearSession#0" />
-                <element signature="n#!!block;n#addToCart#0" />
-                <element signature="n#!!block;n#cacheRequest#0" />
-                <element signature="n#!!block;n#scheduleRowCache#0" />
+                <element signature="e#87#192#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,6 +45,7 @@
       <find>visitNode</find>
       <find>s.words[word]&amp;(1&lt;&lt;bit)</find>
       <find>conn</find>
+      <find>Sleep</find>
     </findStrings>
     <replaceStrings>
       <replace>rdb</replace>
@@ -64,11 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter01/demo08(1.7.1)/main.go" />
-        <option value="$PROJECT_DIR$/chapter01/demo09(1.7.2)/main.go" />
-        <option value="$PROJECT_DIR$/chapter02/2.3.1/main.go" />
-        <option value="$PROJECT_DIR$/chapter02/demo02(2.3.2)/main.go" />
-        <option value="$PROJECT_DIR$/chapter02/demo03(2.3.3)/main.go" />
         <option value="$PROJECT_DIR$/chapter04/demo01(4.1.1)/main.go" />
         <option value="$PROJECT_DIR$/chapter04/demo01(4.2.1)/main.go" />
         <option value="$PROJECT_DIR$/chapter04/demo02(4.2.1)/main.go" />
@@ -115,6 +111,11 @@
         <option value="$PROJECT_DIR$/redisDemo/article/main.go" />
         <option value="$PROJECT_DIR$/redisDemo/WebRetailer/db/db.go" />
         <option value="$PROJECT_DIR$/redisDemo/WebRetailer/main.go" />
+        <option value="$PROJECT_DIR$/redisDemo/发布与订阅/main.go" />
+        <option value="$PROJECT_DIR$/redisDemo/WebRetailer(chapter02)/main.go" />
+        <option value="$PROJECT_DIR$/redisDemo/publishAndSubscribe(chapter03)/main.go" />
+        <option value="$PROJECT_DIR$/redisDemo/publishAndSubscribe-chapter03/main.go" />
+        <option value="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go" />
       </list>
     </option>
   </component>
@@ -149,36 +150,14 @@
               <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
               <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRetailer" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter03-publishAndSubscribe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
               <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRetailer" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter03-publishAndSubscribe" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.14.12" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.14.12" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.14.12" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="time" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,11 +177,12 @@
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\redisDemo\发布与订阅" />
+      <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\chapter01\demo04" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\chapter05\demo06(5.3.1)" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\chapter01\demo04" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -217,12 +197,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (4)">
+  <component name="RunManager" selected="Go Build.go build main.go (2)">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_programming_language_demo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/chapter06/demo03(6.3.2)/main.go" />
+      <filePath value="$PROJECT_DIR$/redisDemo/publishAndSubscribe-chapter03/main.go" />
       <package value="lai.com/go_programming_language_demo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -231,7 +211,7 @@
       <module name="go_programming_language_demo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/chapter06/demo05(6.5.1)/main.go" />
+      <filePath value="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go" />
       <package value="lai.com/go_programming_language_demo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -254,29 +234,29 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (5)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_programming_language_demo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/redisDemo/demo01/main.go" />
+      <filePath value="$PROJECT_DIR$/redisDemo/publishAndSubscribe(chapter03)/main.go" />
       <package value="lai.com/go_programming_language_demo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go (1)" />
-      <item itemvalue="Go Build.go build main.go (2)" />
-      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build main.go (3)" />
       <item itemvalue="Go Build.go build main.go (4)" />
+      <item itemvalue="Go Build.go build main.go (5)" />
+      <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build main.go (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (4)" />
-        <item itemvalue="Go Build.go build main.go (3)" />
-        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build main.go (5)" />
+        <item itemvalue="Go Build.go build main.go (4)" />
+        <item itemvalue="Go Build.go build main.go (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +271,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -306,7 +285,7 @@
       <window_info anchor="bottom" id="GraphQL" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.3991323" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.28958786" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.26030368" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.3275488" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -363,41 +342,14 @@
     <MESSAGE value="文章投票系统" />
     <MESSAGE value="文章投票系统完成" />
     <MESSAGE value="网上商店创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="网上商店创建" />
+    <MESSAGE value="虚拟商城设计完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="虚拟商城设计完成" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter04/demo09(4.4.2)/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sync/pool.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/fmt/print.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="262" selection-start-line="262" selection-end-line="262" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/asm_amd64.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1356" selection-start-line="1356" selection-end-line="1356" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Go/src/runtime/proc.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -681,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redisDemo/demo01/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -709,7 +654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redisDemo/article/main.go">
+    <entry file="file://$PROJECT_DIR$/redisDemo/chapter01-article/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="16" selection-start-line="16" selection-end-line="17" />
@@ -722,14 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../pkg/mod/github.com/go-redis/redis/v8@v8.4.4/commands.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="769" column="17" selection-start-line="769" selection-start-column="17" selection-end-line="769" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redisDemo/WebRetailer/db/db.go">
+    <entry file="file://$PROJECT_DIR$/redisDemo/chapter02-webRetailer/db/db.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
@@ -753,18 +691,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redisDemo/WebRetailer/main.go">
+    <entry file="file://$PROJECT_DIR$/go.mod">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="175" column="36" selection-start-line="175" selection-start-column="36" selection-end-line="175" selection-end-column="36" />
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisDemo/chapter02-webRetailer/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="28" selection-start-line="28" selection-end-line="29" />
           <folding>
-            <element signature="e#87#166#0" expanded="true" />
             <element signature="n#!!block;n#ToSlice#0" />
             <element signature="n#!!block;n#updateToken#0" />
             <element signature="n#!!block;n#clearSession#0" />
             <element signature="n#!!block;n#addToCart#0" />
             <element signature="n#!!block;n#cacheRequest#0" />
             <element signature="n#!!block;n#scheduleRowCache#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/context/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="170" column="5" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../pkg/mod/github.com/go-redis/redis/v8@v8.4.4/commands.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="599" column="5" selection-start-line="599" selection-start-column="5" selection-end-line="599" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/db/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#83#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#87#192#0" expanded="true" />
           </folding>
         </state>
       </provider>
