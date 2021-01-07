@@ -16,7 +16,15 @@ var ctx = context.Background()
 
 func main() {
 	rdb := db.GetConnect()
-	info := rdb.Info(ctx, "aof_pending_bio_fsync").Val()
-	fmt.Println(info)
+	data, err := rdb.Get(ctx, "test").Result()
+	if err != nil {
+		fmt.Println("err:", err)
+		return
+	}
+	fmt.Println(111)
+	fmt.Println(data)
+	fmt.Println(222)
+	//info := rdb.Info(ctx, "aof_pending_bio_fsync").Val()
+	//fmt.Println(info)
 	//rdb.Publish(ctx, "c1", "hello! what's your name?")
 }
