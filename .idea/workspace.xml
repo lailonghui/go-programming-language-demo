@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e9ab9a7-d091-489e-9284-43832e01b0e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/k8s-test/demo01/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s-test/demo01/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisDemo/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s-test/demo01/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/k8s-test/demo01/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s-test/demo01/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/k8s-test/demo01/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,35 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-              <folding>
-                <element signature="e#87#198#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/db/db.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="e#83#132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/k8s-test/demo01/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="233">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#85#114#0" expanded="true" />
               </folding>
@@ -53,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/k8s-test/demo01/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="160">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -145,8 +118,8 @@
         <option value="$PROJECT_DIR$/redisDemo/publishAndSubscribe-chapter03/main.go" />
         <option value="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go" />
         <option value="$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/db/db.go" />
-        <option value="$PROJECT_DIR$/k8s-test/demo01/main.go" />
         <option value="$PROJECT_DIR$/k8s-test/demo01/Dockerfile" />
+        <option value="$PROJECT_DIR$/k8s-test/demo01/main.go" />
       </list>
     </option>
   </component>
@@ -181,6 +154,34 @@
               <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
               <item name="k8s-test" type="462c0819:PsiDirectoryNode" />
               <item name="demo01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter01-article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter03-publishAndSubscribe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go_programming_language_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter03-publishAndSubscribe" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go_programming_language_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -297,7 +298,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -310,7 +311,7 @@
       <window_info anchor="bottom" id="GraphQL" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.3991323" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.25813448" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.324295" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.3275488" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -347,30 +348,14 @@
     <MESSAGE value="网上商店创建" />
     <MESSAGE value="虚拟商城设计完成" />
     <MESSAGE value="Redis命令" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redis命令" />
+    <MESSAGE value="上传docker文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传docker文件" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter05/demo04(5.2.4)/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#87#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../pkg/mod/golang.org/x/net@v0.0.0-20201110031124-69a78807bb2b/html/parse.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="2349" column="27" lean-forward="true" selection-start-line="2349" selection-start-column="27" selection-end-line="2349" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../pkg/mod/golang.org/x/net@v0.0.0-20201110031124-69a78807bb2b/html/node.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -629,19 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redisDemo/chapter01-article/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" selection-start-line="16" selection-end-line="17" />
-          <folding>
-            <element signature="n#!!block;n#getConnect#0" />
-            <element signature="n#!!block;n#articleVote#0" />
-            <element signature="n#!!block;n#postArticle#0" />
-            <element signature="n#!!block;n#getArticle#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redisDemo/chapter02-webRetailer/db/db.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -712,17 +684,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="260">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="e#87#198#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/redisDemo/chapter01-article/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" selection-start-line="27" selection-end-line="37" />
+          <folding>
+            <element signature="n#!!block;n#getConnect#0" />
+            <element signature="n#!!block;n#articleVote#0" />
+            <element signature="n#!!block;n#postArticle#0" />
+            <element signature="n#!!block;n#getArticle#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s-test/demo01/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/redisDemo/chapter03-publishAndSubscribe/db/db.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="200">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
             <element signature="e#83#132#0" expanded="true" />
@@ -730,20 +722,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/k8s-test/demo01/main.go">
+    <entry file="file://$PROJECT_DIR$/../../../pkg/mod/github.com/go-redis/redis/v8@v8.4.4/options.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="e#85#114#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="199">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/k8s-test/demo01/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/../../../pkg/mod/github.com/go-redis/redis/v8@v8.4.4/cluster.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="-680">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s-test/demo01/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#85#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
