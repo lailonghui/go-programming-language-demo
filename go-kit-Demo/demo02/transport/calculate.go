@@ -54,7 +54,7 @@ func decodeArithmeticRequest(_ context.Context, r *http.Request) (interface{}, e
 	//if err := json.NewDecoder(r.Body).Decode(&request); err != nil {
 	//	return nil, err
 	//}
-	//return request,nil
+	//return request, nil
 }
 
 // encodeArithmeticResponse encode response to return

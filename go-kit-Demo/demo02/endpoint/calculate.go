@@ -49,7 +49,6 @@ func MakeArithmeticEndpoint(svc service.Service) endpoint.Endpoint {
 		} else {
 			return nil, errors.New("ErrInvalidRequestType")
 		}
-
 		return ArithmeticResponse{Result: res, Error: calError}, nil
 
 	}
