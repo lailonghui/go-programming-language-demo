@@ -86,9 +86,9 @@ func getConnect() *redis.Client {
 func getConnectCluster() *redis.ClusterClient {
 	client := redis.NewClusterClient(&redis.ClusterOptions{
 		//Addrs: []string{"192.168.3.132:7001", "192.168.3.132:7002", "192.168.3.132:7003", "192.168.3.132:7004", "192.168.3.132:7005", "192.168.3.132:7006"}, //set redis cluster url
-		Addrs: []string{"redis-0.redis.public-service.svc.cluster.local:6379"}, //set redis cluster url
+		Addrs: []string{"redis-0.redis.public-services.svc.cluster.local:6379"}, //set redis cluster url
 		//Addrs:    []string{"192.168.3.130:6379"}, //set redis cluster url
-		//Addrs:    []string{"192.168.3.130:16379", "redis-0.redis.public-service.svc.cluster.local:6379"}, //set redis cluster url
+		//Addrs:    []string{"192.168.3.130:16379", "redis-0.redis.public-services.svc.cluster.local:6379"}, //set redis cluster url
 		Password: "", //set password
 	})
 

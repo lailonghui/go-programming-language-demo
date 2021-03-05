@@ -1,17 +1,16 @@
 /*
-@Time : 2021/2/8 11:31
+@Time : 2021/3/5 15:26
 @Author : lai
 @Description :
 @File : calculate
 */
-package endpoint
+package endpoints
 
 import (
 	"context"
 	"errors"
 	"github.com/go-kit/kit/endpoint"
-	"lai.com/go_programming_language_demo/go-kit-Demo/demo02/service"
-	"strings"
+	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/services"
 )
 
 // ArithmeticRequest define request struct
@@ -27,29 +26,29 @@ type ArithmeticResponse struct {
 	Error  error `json:"error"`
 }
 
-//MakeArithmeticEndpoint make endpoints
-func MakeArithmeticEndpoint(svc service.Service) endpoint.Endpoint {
+// MakeArithmeticEndpoint make endpoints
+func MakeArithmeticEndpoint(svc services.Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
 		req := request.(ArithmeticRequest)
 
 		var (
 			res, a, b int
-			calError  error
 		)
 		a = req.A
 		b = req.B
-		if strings.EqualFold(req.RequestType, "Add") {
+		switch req.RequestType {
+		case "Add":
 			res = svc.Add(a, b)
-		} else if strings.EqualFold(req.RequestType, "Subtract") {
+		case "Subtract":
 			res = svc.Subtract(a, b)
-		} else if strings.EqualFold(req.RequestType, "Multiply") {
+		case "Multiply":
 			res = svc.Multiply(a, b)
-		} else if strings.EqualFold(req.RequestType, "Divide") {
-			res, calError = svc.Divide(a, b)
-		} else {
+		case "Divide":
+			res, err = svc.Divide(a, b)
+		default:
 			return nil, errors.New("ErrInvalidRequestType")
 		}
-		return ArithmeticResponse{Result: res, Error: calError}, nil
 
+		return ArithmeticResponse{Result: res, Error: err}, nil
 	}
 }

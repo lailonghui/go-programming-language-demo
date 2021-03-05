@@ -16,7 +16,7 @@ import (
 	"os"
 )
 
-// transport
+// transports
 func main() {
 	logger := log.NewLogfmtLogger(os.Stderr)
 

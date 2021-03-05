@@ -6,9 +6,12 @@
 */
 package service
 
-import "github.com/go-kit/kit/log"
+import (
+	"github.com/go-kit/kit/log"
+	"time"
+)
 
-// MiddlewareService define service middleware
+// MiddlewareService define services middleware
 type MiddlewareService func(Service) Service
 
 // loggingMiddleware Make a new type
@@ -23,4 +26,19 @@ func LoggingMiddleware(logger log.Logger) MiddlewareService {
 	return func(next Service) Service {
 		return loggingMiddleware{next, logger}
 	}
+}
+
+func (mw loggingMiddleware) Add(a, b int) (ret int) {
+	defer func(begin time.Time) {
+		mw.logger.Log(
+			"function", "Add",
+			"a", a,
+			"b", b,
+			"result", ret,
+			"took", time.Since(begin),
+		)
+	}(time.Now())
+
+	ret = mw.Service.Add(a, b)
+	return ret
 }

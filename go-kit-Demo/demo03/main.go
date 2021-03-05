@@ -1,5 +1,5 @@
 /*
-@Time : 2021/2/9 14:57
+@Time : 2021/3/5 14:31
 @Author : lai
 @Description :
 @File : main
@@ -10,9 +10,10 @@ import (
 	"context"
 	"fmt"
 	"github.com/go-kit/kit/log"
-	"lai.com/go_programming_language_demo/go-kit-Demo/demo02/endpoint"
 	"lai.com/go_programming_language_demo/go-kit-Demo/demo02/service"
-	"lai.com/go_programming_language_demo/go-kit-Demo/demo02/transport"
+	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/endpoints"
+	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/services"
+	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/transports"
 	"net/http"
 	"os"
 	"os/signal"
@@ -21,7 +22,12 @@ import (
 
 func main() {
 	ctx := context.Background()
+
 	errChan := make(chan error)
+
+	var svc service.Service
+	svc = services.ArithmeticService{}
+	endpoint := endpoints.MakeArithmeticEndpoint(svc)
 
 	var logger log.Logger
 	{
@@ -30,15 +36,7 @@ func main() {
 		logger = log.With(logger, "caller", log.DefaultCaller)
 	}
 
-	var svc service.Service
-	svc = service.ArithmeticService{}
-
-	// add logging middleware
-	svc = service.LoggingMiddleware(logger)(svc)
-
-	endpoint := endpoint.MakeArithmeticEndpoint(svc)
-
-	r := transport.MakeHttpHandler(ctx, endpoint, logger)
+	r := transports.MakeHttpHandler(ctx, endpoint, logger)
 
 	go func() {
 		fmt.Println("Http Server start at port:9000")
@@ -53,5 +51,4 @@ func main() {
 	}()
 
 	fmt.Println(<-errChan)
-
 }

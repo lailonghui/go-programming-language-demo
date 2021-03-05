@@ -2,7 +2,7 @@
 @Time : 2021/2/7 15:03
 @Author : lai
 @Description :
-@File : transport
+@File : transports
 */
 package main
 
@@ -13,7 +13,7 @@ import (
 	"net/http"
 )
 
-// endpoint
+// endpoints
 func makeUppercaseEndpoint(svc StringService) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
 		req := request.(uppercaseRequest)
