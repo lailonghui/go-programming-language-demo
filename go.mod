@@ -10,4 +10,5 @@ require (
 	github.com/prometheus/client_golang v1.9.0
 	github.com/streadway/amqp v1.0.0 // indirect
 	golang.org/x/net v0.0.0-20201202161906-c7110b5ffcbb
+	golang.org/x/time v0.0.0-20191024005414-555d28b269f0
 )

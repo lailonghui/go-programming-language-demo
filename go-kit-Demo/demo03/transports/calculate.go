@@ -14,6 +14,7 @@ import (
 	"github.com/go-kit/kit/log"
 	kithttp "github.com/go-kit/kit/transport/http"
 	"github.com/gorilla/mux"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/endpoints"
 	"net/http"
 	"strconv"
@@ -71,6 +72,9 @@ func MakeHttpHandler(ctx context.Context, endpoint endpoint.Endpoint, logger log
 		kithttp.ServerErrorLogger(logger),
 		kithttp.ServerErrorEncoder(kithttp.DefaultErrorEncoder),
 	}
+
+	//新增用于Prometheus轮询拉取监控指标的代码，开发API接口/metrics
+	r.Path("/metrics").Handler(promhttp.Handler())
 
 	r.Methods("POST").Path("/calculate/{type}/{a}/{b}").Handler(kithttp.NewServer(
 		endpoint,
