@@ -38,6 +38,16 @@ type metricMiddleware struct {
 	requestLatency metrics.Histogram
 }
 
+func (mw metricMiddleware) HealthCheck() (result bool) {
+	defer func(begin time.Time) {
+		lvs := []string{"method", "HealthCheck"}
+		mw.requestCount.With(lvs...).Add(1)
+		mw.requestLatency.With(lvs...).Observe(time.Since(begin).Seconds())
+	}(time.Now())
+	result = mw.Service.HealthCheck()
+	return
+}
+
 // Metrics 指标采集方法
 func Metrics(requestCount metrics.Counter, requestLatency metrics.Histogram) services.ServiceMiddleware {
 	return func(next services.Service) services.Service {

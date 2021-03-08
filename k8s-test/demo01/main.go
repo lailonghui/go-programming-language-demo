@@ -23,9 +23,8 @@ import (
 //kubectl expose deploy go-app --port=3000 --type=NodePort
 
 //kubectl get svc --all-namespaces -o wide
-//
-//kubectl delete deploy go-app && kubectl delete svc go-app
 
+//kubectl delete deploy go-app && kubectl delete svc go-app
 var ctx = context.Background()
 
 func index(w http.ResponseWriter, r *http.Request) {

@@ -28,6 +28,18 @@ func LoggingMiddleware(logger log.Logger) ServiceMiddleware {
 	}
 }
 
+func (mw loggingMiddleware) HealthCheck() (result bool) {
+	defer func(begin time.Time) {
+		mw.logger.Log(
+			"function", "HealthCheck",
+			"result", result,
+			"took", time.Since(begin),
+		)
+	}(time.Now())
+	result = mw.Service.HealthCheck()
+	return
+}
+
 func (mw loggingMiddleware) Add(a, b int) (ret int) {
 	defer func(begin time.Time) {
 		mw.logger.Log(

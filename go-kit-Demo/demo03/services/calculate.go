@@ -22,10 +22,20 @@ type Service interface {
 
 	// Divide calculate a/b
 	Divide(a, b int) (int, error)
+
+	// HealthCheck check service health status
+	HealthCheck() bool
 }
 
 // ArithmeticService implement Service interface
 type ArithmeticService struct {
+}
+
+// ArithmeticService实现HealthCheck
+// HealthCheck implement Service method
+// 用于检查服务的健康状态，这里仅仅返回true
+func (s ArithmeticService) HealthCheck() bool {
+	return true
 }
 
 // Add implement Add method

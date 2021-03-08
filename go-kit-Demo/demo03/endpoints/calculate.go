@@ -13,6 +13,12 @@ import (
 	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/services"
 )
 
+//ArithmeticEndpoint define endpoint
+type ArithmeticEndpoints struct {
+	ArithmeticEndpoint  endpoint.Endpoint
+	HealthCheckEndpoint endpoint.Endpoint
+}
+
 // ArithmeticRequest define request struct
 type ArithmeticRequest struct {
 	RequestType string `json:"request_type"`
@@ -50,5 +56,22 @@ func MakeArithmeticEndpoint(svc services.Service) endpoint.Endpoint {
 		}
 
 		return ArithmeticResponse{Result: res, Error: err}, nil
+	}
+}
+
+// HealthRequest 健康检查请求结构
+type HealthRequest struct {
+}
+
+// HealthResponse 健康检查响应结构
+type HealthResponse struct {
+	Status bool `json:"status"`
+}
+
+// MakeHealthCheckEndpoint 创建健康检查Endpoint
+func MakeHealthCheckEndpoint(svc services.Service) endpoint.Endpoint {
+	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
+		status := svc.HealthCheck()
+		return HealthResponse{Status: status}, nil
 	}
 }

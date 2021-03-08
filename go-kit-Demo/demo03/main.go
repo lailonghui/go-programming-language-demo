@@ -8,6 +8,7 @@ package main
 
 import (
 	"context"
+	"flag"
 	"fmt"
 	"github.com/go-kit/kit/log"
 	kitprometheus "github.com/go-kit/kit/metrics/prometheus"
@@ -15,6 +16,7 @@ import (
 	"golang.org/x/time/rate"
 	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/endpoints"
 	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/instruments"
+	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/register"
 	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/services"
 	"lai.com/go_programming_language_demo/go-kit-Demo/demo03/transports"
 	"net/http"
@@ -25,6 +27,16 @@ import (
 )
 
 func main() {
+	//定义环境变量
+	var (
+		consulHost  = flag.String("consul.host", "", "consul ip address")
+		consulPort  = flag.String("consul.port", "", "consul port")
+		serviceHost = flag.String("service.host", "", "service ip address")
+		servicePort = flag.String("service.port", "", "service port")
+	)
+	//parse
+	flag.Parse()
+
 	ctx := context.Background()
 	errChan := make(chan error)
 
@@ -59,17 +71,30 @@ func main() {
 	svc = instruments.Metrics(requestCount, requestLatency)(svc)
 
 	endpoint := endpoints.MakeArithmeticEndpoint(svc)
-
 	//add ratelimit,refill every second, set capacity 3
 	rateBucket := rate.NewLimiter(rate.Every(time.Second), 100)
 	endpoint = instruments.NewTokenBucketLimiterWithBuildIn(rateBucket)(endpoint)
 
-	r := transports.MakeHttpHandler(ctx, endpoint, logger)
+	// 创建健康检查的Endpoint,未增加限流
+	healthEndpoint := endpoints.MakeHealthCheckEndpoint(svc)
+
+	//把算术运算Endpoint和健康检查Endpoint封装至ArithmeticEndpoints
+	endpts := endpoints.ArithmeticEndpoints{
+		ArithmeticEndpoint:  endpoint,
+		HealthCheckEndpoint: healthEndpoint,
+	}
+
+	r := transports.MakeHttpHandler(ctx, endpts, logger)
+
+	//创建注册对象
+	registrar := register.Register(*consulHost, *consulPort, *serviceHost, *servicePort, logger)
 
 	go func() {
-		fmt.Println("Http Server start at port:9000")
+		fmt.Println("Http Server start at port:" + *servicePort)
+		//启动前执行注册
+		registrar.Register()
 		handler := r
-		errChan <- http.ListenAndServe(":9000", handler)
+		errChan <- http.ListenAndServe(":"+*servicePort, handler)
 	}()
 
 	go func() {
@@ -78,5 +103,8 @@ func main() {
 		errChan <- fmt.Errorf("%s", <-c)
 	}()
 
-	fmt.Println(<-errChan)
+	error := <-errChan
+	//服务退出取消注册
+	registrar.Deregister()
+	fmt.Println(error)
 }

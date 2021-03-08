@@ -10,7 +10,6 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"github.com/go-kit/kit/endpoint"
 	"github.com/go-kit/kit/log"
 	kithttp "github.com/go-kit/kit/transport/http"
 	"github.com/gorilla/mux"
@@ -64,8 +63,12 @@ func encodeArithmeticResponse(ctx context.Context, w http.ResponseWriter, respon
 	return json.NewEncoder(w).Encode(response)
 }
 
+func decodeHealthCheckRequest(ctx context.Context, r *http.Request) (interface{}, error) {
+	return endpoints.HealthRequest{}, nil
+}
+
 // MakeHttpHandler make http handler use mux
-func MakeHttpHandler(ctx context.Context, endpoint endpoint.Endpoint, logger log.Logger) http.Handler {
+func MakeHttpHandler(ctx context.Context, endpoints endpoints.ArithmeticEndpoints, logger log.Logger) http.Handler {
 	r := mux.NewRouter()
 
 	options := []kithttp.ServerOption{
@@ -77,8 +80,16 @@ func MakeHttpHandler(ctx context.Context, endpoint endpoint.Endpoint, logger log
 	r.Path("/metrics").Handler(promhttp.Handler())
 
 	r.Methods("POST").Path("/calculate/{type}/{a}/{b}").Handler(kithttp.NewServer(
-		endpoint,
+		endpoints.ArithmeticEndpoint,
 		decodeArithmeticRequest,
+		encodeArithmeticResponse,
+		options...,
+	))
+
+	//create health check handler
+	r.Methods("GET").Path("/health").Handler(kithttp.NewServer(
+		endpoints.HealthCheckEndpoint,
+		decodeHealthCheckRequest,
 		encodeArithmeticResponse,
 		options...,
 	))
