@@ -15,16 +15,30 @@ import (
 
 //docker build -t go-app-img .
 //docker run -d -p 3333:3000 --rm --name go-app-container go-app-img
+// docker run -d -p 3333:8080 --rm --name vehicle-container 192.168.50.154:5000/vehicle:v1
 
 //docker build -t 192.168.3.130:5000/go-app:v12 .
 //docker push 192.168.3.130:5000/go-app:v12
 
+//docker build -t 192.168.50.154:5000/go-app:v1 .
+//docker push 192.168.50.154:5000/go-app:v1
+
+//docker build -t 192.168.50.154:5000/vehicle:v1 .
+//docker push 192.168.50.154:5000/vehicle:v1
+
 //kubectl create -f go-app.yaml
 //kubectl expose deploy go-app --port=3000 --type=NodePort
+
+//kubectl create -f vehicle.yaml
+//kubectl expose deploy vehicle --port=8888 --type=NodePort
+
+//kubectl create deployment vehicle --image=192.168.50.154:5000/vehicle:v1
+//kubectl expose deployment vehicle --port=8080 --type=NodePort
 
 //kubectl get svc --all-namespaces -o wide
 
 //kubectl delete deploy go-app && kubectl delete svc go-app
+//kubectl delete deploy vehicle && kubectl delete svc vehicle
 var ctx = context.Background()
 
 func index(w http.ResponseWriter, r *http.Request) {

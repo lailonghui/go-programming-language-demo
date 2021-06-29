@@ -1,0 +1,24 @@
+syntax = "proto3";
+package jt808;
+
+import "google/protobuf/timestamp.proto";
+
+
+option go_package = "gitee.com/lailonghui/terminal_info_service/internal/protocol/jt808/grpc";
+
+
+service Hello {
+  rpc SayHello(HelloRequest) returns (HelloReply);
+}
+
+// 请求结构体
+message HelloRequest {
+  string name = 1;
+}
+
+// 回复结构体
+message HelloReply {
+  string message = 1;
+  google.protobuf.Timestamp created_at = 3;
+}
+

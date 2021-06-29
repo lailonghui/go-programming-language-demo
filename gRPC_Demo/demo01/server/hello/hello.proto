@@ -1,0 +1,20 @@
+syntax = "proto3";
+package hello;
+
+option go_package = "lai.com/go_programming_language_demo/gRpc_Demo/demo01/server/hello";
+
+
+
+service Hello {
+    rpc SayHello(HelloRequest) returns (HelloReply);
+}
+
+// 请求结构体
+message HelloRequest {
+    string name = 1;
+}
+
+// 回复结构体
+message HelloReply {
+    string message = 1;
+}

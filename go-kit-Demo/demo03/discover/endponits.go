@@ -28,7 +28,6 @@ func MakeDiscoverEndpoint(ctx context.Context, client consul.Client, logger log.
 	//创建consul的连接实例
 	//可实时查询服务实例的状态信息
 	instancer := consul.NewInstancer(client, logger, serviceName, tags, passingOnly)
-
 	//针对calculate接口创建sd.Factory
 	factory := arithmeticFactory(ctx, "POST", "calculate")
 

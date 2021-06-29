@@ -85,7 +85,6 @@ func main() {
 	}
 
 	r := transports.MakeHttpHandler(ctx, endpts, logger)
-
 	//创建注册对象
 	registrar := register.Register(*consulHost, *consulPort, *serviceHost, *servicePort, logger)
 

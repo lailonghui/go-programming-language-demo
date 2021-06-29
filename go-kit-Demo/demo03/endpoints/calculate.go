@@ -60,8 +60,7 @@ func MakeArithmeticEndpoint(svc services.Service) endpoint.Endpoint {
 }
 
 // HealthRequest 健康检查请求结构
-type HealthRequest struct {
-}
+type HealthRequest struct{}
 
 // HealthResponse 健康检查响应结构
 type HealthResponse struct {
