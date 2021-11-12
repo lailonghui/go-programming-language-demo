@@ -19,6 +19,14 @@ func main() {
 	http.ListenAndServe("127.0.0.1:7777", nil) //开始监听
 }
 
+//初始化处理中心，以便调用
+var hub = &Hub{
+	userList:   make(map[*User]bool),
+	register:   make(chan *User),
+	unregister: make(chan *User),
+	broadcast:  make(chan []byte),
+}
+
 //定义一个websocket处理器，用于收集消息和广播消息
 type Hub struct {
 	//用户列表，保存所有用户
@@ -57,14 +65,6 @@ var up = &websocket.Upgrader{
 		//还可以根据其他需求定制校验规则
 		return true
 	},
-}
-
-//初始化处理中心，以便调用
-var hub = &Hub{
-	userList:   make(map[*User]bool),
-	register:   make(chan *User),
-	unregister: make(chan *User),
-	broadcast:  make(chan []byte),
 }
 
 func wsHandle(w http.ResponseWriter, r *http.Request) {

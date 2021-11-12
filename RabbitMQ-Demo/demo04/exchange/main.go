@@ -54,8 +54,8 @@ func main() {
 		//msgBody := fmt.Sprintf("今天捡到%d分钱", i)
 
 		err = ch.Publish(
-			"lai.test.1", //exchange，当交换器名称为空时，表示使用默认交换器
-			"aa",         //routing key
+			"workflow",    //exchange，当交换器名称为空时，表示使用默认交换器
+			"outage.test", //routing key
 			false,
 			false,
 			amqp.Publishing{

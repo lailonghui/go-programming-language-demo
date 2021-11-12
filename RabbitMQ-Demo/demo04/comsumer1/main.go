@@ -56,9 +56,20 @@ func main() {
 	//	false,
 	//	nil,
 	//)
+	//msgs, err := ch.Consume(
+	//	"workflow.test.receiver2", // 引用前面的队列名
+	//	"workflow-srv",            // 消费者名字，不填自动生成一个
+	//	//q.Name, // 引用前面的队列名
+	//	//"",     // 消费者名字，不填自动生成一个
+	//	false, // 自动向队列确认消息已经处理
+	//	false, // exclusive
+	//	false, // no-local
+	//	false, // no-wait
+	//	nil,   // args
+	//)
 	msgs, err := ch.Consume(
-		"workflow.test.receiver2", // 引用前面的队列名
-		"workflow-srv",            // 消费者名字，不填自动生成一个
+		"workflow.test.receiver", // 引用前面的队列名
+		"workflow-srv",           // 消费者名字，不填自动生成一个
 		//q.Name, // 引用前面的队列名
 		//"",     // 消费者名字，不填自动生成一个
 		false, // 自动向队列确认消息已经处理

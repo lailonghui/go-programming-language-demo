@@ -18,7 +18,7 @@ import (
 var wg sync.WaitGroup
 
 func main() {
-	conn, _, err := websocket.DefaultDialer.Dial("ws://127.0.0.1:7777/chat", nil)
+	conn, _, err := websocket.DefaultDialer.Dial("ws://127.0.0.1:8081/chat", nil)
 	if err != nil {
 		fmt.Println("错误信息:", err)
 	}

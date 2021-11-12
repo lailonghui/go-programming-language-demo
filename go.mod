@@ -7,10 +7,12 @@ require (
 	github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d // indirect
 	github.com/armon/go-metrics v0.3.6 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
+	github.com/fogleman/gg v1.3.0
 	github.com/frankban/quicktest v1.11.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/go-kit/kit v0.10.0
 	github.com/go-redis/redis/v8 v8.7.1
+	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/golang/protobuf v1.5.1
 	github.com/gomodule/redigo v1.8.3 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
@@ -43,6 +45,7 @@ require (
 	github.com/sirupsen/logrus v1.6.0 // indirect
 	github.com/streadway/amqp v1.0.0
 	github.com/xingliuhua/leaf v1.1.2 // indirect
+	golang.org/x/image v0.0.0-20211028202545-6944b10bf410
 	golang.org/x/net v0.0.0-20210420072503-d25e30425868
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e
 	google.golang.org/grpc v1.37.0
