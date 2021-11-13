@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e9ab9a7-d091-489e-9284-43832e01b0e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter07/demo02/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter07/demo03/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter07/demo04/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tiff-demo/demo01/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tiff-demo/demo02/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tiff-demo/demo03/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket-demo02/server/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo04(字体)/JingDianCuHeiJian-1.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo04(字体)/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo05(渐变)/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo06(背景图)/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo07/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo07/out.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo08/JingDianZongYiTiJian-1.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo08/gopher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo08/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo08/out.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo09/JingDianZongYiTiJian-1.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo09/gopher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo09/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo09/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tiff-demo/demo09/out.tiff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitMQ-Demo/demo04/comsumer1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ-Demo/demo04/comsumer1/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitMQ-Demo/demo04/exchange/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ-Demo/demo04/exchange/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worksocket-demo/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-demo/client/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worksocket-demo/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-demo/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiff-demo/demo03/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/tiff-demo/demo03/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +206,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GO_FMT" value="true" />
@@ -217,15 +222,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\tiff-demo" />
+      <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\tiff-demo\demo08" />
+      <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\tiff-demo\demo04(字体)" />
       <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\gRPC_Demo\demo01\client\proto" />
       <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\gRPC_Demo\demo01\client" />
-      <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\RabbitMQ-Demo\demo02" />
-      <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\RabbitMQ-Demo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\worksocket-demo\server" />
@@ -235,43 +240,7 @@
       <recent name="D:\Go-work\src\lai.com\go_programming_language_demo\go-kit-Demo\demo01\transport" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo03">
-    <configuration name="go build lai.com/go_programming_language_demo/chapter07/demo03" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go_programming_language_demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="lai.com/go_programming_language_demo/chapter07/demo03" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/chapter07/demo03/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build lai.com/go_programming_language_demo/chapter07/demo04" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go_programming_language_demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="lai.com/go_programming_language_demo/chapter07/demo04" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/chapter07/demo04/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build lai.com/go_programming_language_demo/chapter08/demo01" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go_programming_language_demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="lai.com/go_programming_language_demo/chapter08/demo01" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/chapter08/demo01/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build lai.com/go_programming_language_demo/tiff-demo/demo02" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go_programming_language_demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="lai.com/go_programming_language_demo/tiff-demo/demo02" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/tiff-demo/demo02/main.go" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo09">
     <configuration name="go build lai.com/go_programming_language_demo/tiff-demo/demo03" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_programming_language_demo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -281,20 +250,56 @@
       <filePath value="$PROJECT_DIR$/tiff-demo/demo03/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build lai.com/go_programming_language_demo/tiff-demo/demo04(字体)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_programming_language_demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="lai.com/go_programming_language_demo/tiff-demo/demo04(字体)" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/tiff-demo/demo04(字体)/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build lai.com/go_programming_language_demo/tiff-demo/demo06(背景图)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_programming_language_demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="lai.com/go_programming_language_demo/tiff-demo/demo06(背景图)" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/tiff-demo/demo06(背景图)/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build lai.com/go_programming_language_demo/tiff-demo/demo08" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_programming_language_demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="lai.com/go_programming_language_demo/tiff-demo/demo08" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/tiff-demo/demo08/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build lai.com/go_programming_language_demo/tiff-demo/demo09" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_programming_language_demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="lai.com/go_programming_language_demo/tiff-demo/demo09" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/tiff-demo/demo09/main.go" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/chapter07/demo03" />
-      <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/chapter07/demo04" />
-      <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/chapter08/demo01" />
-      <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo02" />
       <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo03" />
+      <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo08" />
+      <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo04(字体)" />
+      <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo06(背景图)" />
+      <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo09" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo09" />
+        <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo06(背景图)" />
         <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo03" />
-        <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo02" />
-        <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/chapter08/demo01" />
-        <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/chapter07/demo04" />
-        <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/chapter07/demo03" />
+        <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo08" />
+        <item itemvalue="Go Build.go build lai.com/go_programming_language_demo/tiff-demo/demo04(字体)" />
       </list>
     </recent_temporary>
   </component>

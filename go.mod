@@ -12,7 +12,7 @@ require (
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/go-kit/kit v0.10.0
 	github.com/go-redis/redis/v8 v8.7.1
-	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
+	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
 	github.com/golang/protobuf v1.5.1
 	github.com/gomodule/redigo v1.8.3 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
