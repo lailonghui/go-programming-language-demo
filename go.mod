@@ -35,6 +35,7 @@ require (
 	github.com/julienschmidt/httprouter v1.3.0 // indirect
 	github.com/miekg/dns v1.1.31 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
+	github.com/opentracing/opentracing-go v1.1.0
 	github.com/pborman/uuid v1.2.1 // indirect
 	github.com/pierrec/lz4 v2.5.2+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
